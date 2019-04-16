@@ -1,0 +1,12 @@
+{% import_yaml "bluematador/defaults.yaml" as defaults %}
+{% import_yaml "bluematador/osmap.yaml" as osmap %}
+
+{% set bluematador = salt['grains.filter_by'](
+  defaults,
+  merge=salt['grains.filter_by'](
+        osmap,
+        grain='os_family',
+        merge=salt['pillar.get']('bluematador:lookup', {}),),
+  base = 'bluematador',
+)
+%}
