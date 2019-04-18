@@ -2,7 +2,7 @@ bluematador:
   accountId: 00000000-0000-0000-0000-000000000000
   apikey: 5FbSkilg7S3m80jsMdPdrcD40b2JMnvo
   environment: dev
-  intake: http://haproxy/pu
+  intake: https://app.bluematador.com/pu
   projects: # can be omitted if not using projects
     - 00000000-0000-0000-0000-000000000000
     - 00000000-0000-0000-0000-000000000000
