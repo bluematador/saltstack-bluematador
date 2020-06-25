@@ -29,4 +29,5 @@ create config file:
 run blue matador:
   service.running:
     - enable: True
+    - reload: True
     - name: bluematador-agent
